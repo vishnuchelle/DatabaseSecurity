@@ -1,0 +1,5 @@
+CREATE TABLE `account_type` (
+  `ACCTYPE_ID` char(3) NOT NULL,
+  `ACCTYPE_DESC` varchar(30) NOT NULL,
+  PRIMARY KEY (`ACCTYPE_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

@@ -4,18 +4,31 @@
 
 $(document).ready(function(){
 
-        setInterval(function(){
-            //code goes here that will be run every 5 seconds.
+    secNumGenerate();
 
-            // Ajax Call
-            $.ajax({
-                type: "GET",
-                url: "random.php",
-                success: function(resp){
-                    $('#respSecPass').html(resp+"");
-                }
-            });
-        }, 30000);
+    function secNumGenerate(){
+        $.ajax({
+            type: "GET",
+            url: "random.php",
+            success: function(resp){
+                $('#respSecPass').html(resp+"");
+            }
+        });
+
+        setTimeout(secNumGenerate, 30000);
+    }
+
+    //window.setInterval(function(){
+    //
+    //        // Ajax Call
+    //        $.ajax({
+    //            type: "GET",
+    //            url: "random.php",
+    //            success: function(resp){
+    //                $('#respSecPass').html(resp+"");
+    //            }
+    //        });
+    //}, 30000);
 
     $('#secureBtn').click(function(){
 
@@ -39,17 +52,21 @@ $(document).ready(function(){
                                         $('#loginResp').html("Successfully Logged In");
                                     }else{
                                         $('#loginResp').html("Failed Login");
+
+                                        //call the failed login tracker function to save the failed attempt
+                                        $.ajax({
+                                            type: "GET",
+                                            url: "failedLoginTrack.php"
+                                        });
+
                                     }
                                 }
                             });
 
-                        //window.location="secureLogin.html";
-                        //$('#response').html("entered true");
                     }
                     else{
-                        //$("#add_err").css('display', 'inline', 'important');
-                        //$("#add_err").html("<img src='images/alert.png' />Wrong username or password");
-                        $('#loginResp').html("Failed Login");
+
+                        $('#loginResp').html("Provide latest secure number!");
                     }
                 }
             });

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7875762-ace1-457b-8faf-5467890584a4" name="Default" comment="" />
+    <list default="true" id="e7875762-ace1-457b-8faf-5467890584a4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/failedLoginTrack.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/secureLogin.js" afterPath="$PROJECT_DIR$/js/secureLogin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="testbank.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,18 +33,18 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="969">
+            <state vertical-scroll-proportion="-11.923077" vertical-offset="285" max-vertical-offset="969">
               <caret line="35" column="69" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secureLogin.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="secureLogin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/secureLogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53125" vertical-offset="306" max-vertical-offset="1054">
-              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="531" max-vertical-offset="1343">
+              <caret line="55" column="107" selection-start-line="55" selection-start-column="107" selection-end-line="55" selection-end-column="107" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
@@ -47,52 +52,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/login.js">
+      <file leaf-file-name="failedLoginTrack.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/failedLoginTrack.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validatePass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/validatePass.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="765">
-              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-              <folding>
-                <marker date="1429509986298" expanded="true" signature="222:291" placeholder="SELECT PASSW..customer..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validateSecureNum.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/validateSecureNum.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.846154" vertical-offset="166" max-vertical-offset="748">
-              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.8178694" vertical-offset="0" max-vertical-offset="582">
+              <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
               <folding>
                 <element signature="e#6#96#0#PHP" expanded="true" />
-                <marker date="1429509986324" expanded="true" signature="304:379" placeholder="SELECT AUTH_..auth_number..." />
+                <marker date="1429513340623" expanded="true" signature="264:325" placeholder="INSERT INTO ..." />
+                <marker date="1429513340623" expanded="true" signature="264:341" placeholder="UPDATE auth_..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secureLogin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secureLogin.html">
+      <file leaf-file-name="random.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/random.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1173">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-              <folding />
+            <state vertical-scroll-proportion="-19.115385" vertical-offset="183" max-vertical-offset="833">
+              <caret line="40" column="5" selection-start-line="34" selection-start-column="8" selection-end-line="40" selection-end-column="5" />
+              <folding>
+                <marker date="1429506574383" expanded="true" signature="632:703" placeholder="UPDATE auth_..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -108,6 +97,7 @@
         <option value="$PROJECT_DIR$/secure.php" />
         <option value="$PROJECT_DIR$/validateSecureNum.php" />
         <option value="$PROJECT_DIR$/validatePass.php" />
+        <option value="$PROJECT_DIR$/failedLoginTrack.php" />
         <option value="$PROJECT_DIR$/js/secureLogin.js" />
       </list>
     </option>
@@ -122,7 +112,7 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -225,7 +215,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -234,7 +224,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -317,30 +307,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="969">
-          <caret line="35" column="69" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/validateUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="884">
           <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="40" />
           <folding>
             <marker date="1429504578389" expanded="true" signature="-1:-1" placeholder="SELECT CUSTO..customer..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/random.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52577317" vertical-offset="0" max-vertical-offset="833">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1429506574383" expanded="true" signature="-1:-1" placeholder="UPDATE auth_..." />
           </folding>
         </state>
       </provider>
@@ -355,39 +327,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/validatePass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="765">
+        <state vertical-scroll-proportion="0.90549827" vertical-offset="0" max-vertical-offset="765">
           <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
           <folding>
-            <marker date="1429509986298" expanded="true" signature="222:291" placeholder="SELECT PASSW..customer..." />
+            <marker date="1429509986298" expanded="true" signature="-1:-1" placeholder="SELECT PASSW..customer..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/validateSecureNum.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.846154" vertical-offset="166" max-vertical-offset="748">
+        <state vertical-scroll-proportion="0.7079038" vertical-offset="166" max-vertical-offset="748">
           <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
             <element signature="e#6#96#0#PHP" expanded="true" />
-            <marker date="1429509986324" expanded="true" signature="304:379" placeholder="SELECT AUTH_..auth_number..." />
+            <marker date="1429509986324" expanded="true" signature="-1:-1" placeholder="SELECT AUTH_..auth_number..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/secureLogin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1173">
+        <state vertical-scroll-proportion="0.29209623" vertical-offset="0" max-vertical-offset="1173">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.923077" vertical-offset="285" max-vertical-offset="969">
+          <caret line="35" column="69" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/random.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.115385" vertical-offset="183" max-vertical-offset="833">
+          <caret line="40" column="5" selection-start-line="34" selection-start-column="8" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <marker date="1429506574383" expanded="true" signature="632:703" placeholder="UPDATE auth_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/secureLogin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53125" vertical-offset="306" max-vertical-offset="1054">
-          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="531" max-vertical-offset="1343">
+          <caret line="55" column="107" selection-start-line="55" selection-start-column="107" selection-end-line="55" selection-end-column="107" />
           <folding>
             <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/failedLoginTrack.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8178694" vertical-offset="0" max-vertical-offset="582">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+          <folding>
+            <element signature="e#6#96#0#PHP" expanded="true" />
+            <marker date="1429513340623" expanded="true" signature="264:325" placeholder="INSERT INTO ..." />
+            <marker date="1429513340623" expanded="true" signature="264:341" placeholder="UPDATE auth_..." />
           </folding>
         </state>
       </provider>
