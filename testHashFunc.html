@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test hash Function</title>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/CryptoJS/sha512.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#submitBtn').click(function(){
+                var hash = CryptoJS.SHA512($('#pass').val());
+//                alert(hash);
+                $('#response').html(hash+"");
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <INPUT TYPE="TEXT" NAME="Username" value="" id="pass">
+    <BUTTON id="submitBtn">Submit</BUTTON>
+    <div id="response"></div>
+
+
+
+</body>
+</html>
