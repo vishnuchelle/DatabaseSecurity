@@ -1,0 +1,89 @@
+
+<!-- http://cssdeck.com/labs/zcislt7i -->
+
+<html>
+  <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  </head>
+  <body>
+
+    <div class="col-lg-8">
+        <div id="login-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"><span class="text-success">BANKING</span> Starts Here!!!</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                  
+                        <div class="col-xs-6">
+                            <br/>
+                            <p class="lead">Register now with our <span class="text-success">BANK</span></p>
+                            <ul class="list-unstyled" style="line-height: 2">
+                                <li><span class="fa fa-check text-success"></span> New user???</li>
+                            </ul>
+                            <button id="regBtn" class="btn btn-info btn-block">Yes please, register now!</button>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="well">
+                                <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                                    <div class="form-group">
+                                        <p>Already a User? <span class="text-success">GREAT!</span></p>
+                                        <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" id="userName" value="">
+									</div>
+                              
+                                    <button id="submitBtn" class="btn btn-success btn-block">Submit</button>
+                              
+                                 </form>
+                            </div>
+                        </div>
+                        <div><span id="response" class="text-danger">Response will be displayed here</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+      <H1><b>WELCOME TO OUR BANK</B></H1>
+      <table cellspacing="100">
+          <tr>
+              <td>
+                  Online Banking Made Easy,OUR BANK The Best Online Banking Ever.
+              </td>
+              <td>
+                  <fieldset>
+                      <legend>LOGIN</LEGEND>
+                          <DIV ALIGN="RIGHT">
+                              <table border="0">
+                                  <TR>
+                                      <TD>
+                                          Username
+                                      </TD>
+                                      <TD>
+                                          <INPUT TYPE="TEXT" NAME="Username" value="" id="userName">
+                                      </TD>
+                                  </TR>
+                                  <TR>
+                                      <TD>
+                                      <BUTTON id="submitBtn">Submit</BUTTON>
+                                      <BUTTON id="regBtn">Register</BUTTON>
+                                      </TD>
+                                  </TR>
+                                  <TR>
+                                      <div id="response"></div>
+                                  </TR>
+                              </table>
+                          </DIV>
+                  </fieldset>
+              </td>
+          </tr>
+      </table>
+  -->
+
+
+  </body>
+</html>

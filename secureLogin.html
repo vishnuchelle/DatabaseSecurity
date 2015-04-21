@@ -5,59 +5,63 @@
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/secureLogin.js"></script>
     <script src="js/CryptoJS/sha512.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <h1>WELCOME TO OUR BANK</h1>
-    <table cellspacing="100">
-        <tr>
-            <td>
-            Online Banking Made Easy,OUR BANK The Best Online Banking Ever.
-                <br/>
-                <div>Secure Password:</div><div id="respSecPass"></div>
-                <br/>
-                <br/>
-                <div id="loginResp"></div>
-            </td>
-            <td>
 
-                <fieldset>
-                    <legend>SECURE LOGIN</LEGEND>
-                    <DIV ALIGN="RIGHT">
-                        <table border="0">
+    <div class="col-lg-8">
+        <div id="login-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">
+                        <span class="text-success">SECURE</span> Login Page
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <br/>
+                            <div>
+                                <i class="fa fa-lock fa-2x"></i>
+                                <span class="lead text-info"><big> Your Secure ID* for this Login</big></span>
+                            </div>
+                            <br/>
+                            <div class="well text-center">
+                                <span id="respSecPass" class="text-danger lead"></span>
+                            </div>
 
-                            <TR>
-                                <TD>
-                                PASSWORD
-                                </TD>
-                                <TD>
-                                <INPUT TYPE="PASSWORD" NAME="userPassword" id="userPassword">
-                                </TD>
-                            </TR>
+                            <ul class="list-unstyled" style="line-height: 1">
+                                <i class="fa fa-refresh fa-spin"></i>
+                                <span class="muted">ID refreshes every 30seconds*</span>
+                            </ul>
+                        </div>
 
-                            <TR>
-                                <TD>
-                                SECURE PASS
-                                </TD>
-                                <TD>
-                                <INPUT TYPE="PASSWORD" NAME="securePassword" id="securePassword">
-                                </TD>
-                            </TR>
+                        <div class="col-xs-6">
+                            <div class="well">
 
-                            <TR>
-                                <TD>
-                                </TD>
-                                <TD>
-                                <Button id="secureBtn">SecureSignIn</Button>
-                                </TD>
-                            </TR>
+                                <p><span class="text-success">Thanks! </span>Provide 'Account Password' and 'Secure ID' </p>
+                                <div class="form-group">
+                                    <input type="password" name="accountPassword" id="userPassword" tabindex="1" class="form-control" placeholder="Account Password" value="">
+                                </div>
 
-                        </table>
-                    </DIV>
-                </fieldset>
-            </td>
-        </tr>
-    </table>
+                                <div class="form-group">
+                                    <input type="password" name="securePassword" id="securePassword" tabindex="1" class="form-control" placeholder="Secure ID">
+                                </div>
+
+                                <button id="secureBtn" class="btn btn-success btn-block">Login</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span id="loginResp" class="text-danger">Response will be displayed here</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </htmL>

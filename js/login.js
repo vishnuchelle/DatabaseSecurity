@@ -10,7 +10,6 @@ $(document).ready(function(){
             $('#response').html("Username cant be null");
         } else {
 
-
             // Ajax Call
             $.ajax({
                 type: "GET",
