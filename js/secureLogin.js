@@ -35,18 +35,20 @@ $(document).ready(function(){
         if (($('#userPassword').val() == '') && ($('#securePassword').val() == '')) {
             $('#loginResp').html("Please provide both the passwords");
         } else {
-            // Ajax Call
-            $.ajax({
-                type: "GET",
-                url: "validateSecureNum.php",
-                data: "sN=" + $('#securePassword').val(),
-                success: function(resp1){
-                    if($.trim(resp1) == "true"){
+
+                var hashPassword = CryptoJS.SHA512($('#userPassword').val());
+                // Ajax Call
+                $.ajax({
+                    type: "GET",
+                    url: "validateSecureNum.php",
+                    data: "sN=" + $('#securePassword').val(),
+                    success: function(resp1){
+                        if($.trim(resp1) == "true"){
 
                             $.ajax({
                                 type: "GET",
                                 url: "validatePass.php",
-                                data: "p=" + $('#userPassword').val(),
+                                data: "p=" + hashPassword+"",
                                 success: function(resp2){
                                     if($.trim(resp2) == "true"){
                                         $('#loginResp').html("Successfully Logged In");
@@ -57,19 +59,20 @@ $(document).ready(function(){
                                         $.ajax({
                                             type: "GET",
                                             url: "failedLoginTrack.php"
-                                        });
+                                        });//end ajax call
 
                                     }
                                 }
-                            });
+                            });//end AJAX call
 
-                    }
-                    else{
+                        }
+                        else{
 
-                        $('#loginResp').html("Provide latest secure number!");
+                            $('#loginResp').html("Provide latest secure number!");
+                        }
                     }
-                }
-            });
+                });//end AJAX call
+
         }
 
     });

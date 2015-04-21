@@ -9,6 +9,8 @@ $(document).ready(function(){
         if ($('#userName').val() == '') {
             $('#response').html("Username cant be null");
         } else {
+
+
             // Ajax Call
             $.ajax({
                 type: "GET",
@@ -16,9 +18,23 @@ $(document).ready(function(){
                 data: "userName=" + $('#userName').val(),
                 success: function(resp){
                     if($.trim(resp) === "true"){
-                        //$("#add_err").html("right username or password");
-                        window.location="secureLogin.html";
-                        //$('#response').html("entered true");
+
+                        // Ajax Call
+                        $.ajax({
+                            type: "GET",
+                            url: "bruteCheck.php",
+                            success: function(lockStatus){
+                                if($.trim(lockStatus)=== "false"){
+                                    //Account is locked. Please try after one hour.
+                                    $('#response').html("Account is locked. Please try after one hour!");
+                                }else{
+                                    //Proceed to secure page
+                                    window.location="secureLogin.html";
+                                    //$('#response').html("Not locked.");
+                                }
+                            }
+                        });//end AJAX call
+
                     }
                     else{
                         //$("#add_err").css('display', 'inline', 'important');

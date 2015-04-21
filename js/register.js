@@ -6,6 +6,8 @@ $(document).ready(function(){
 
    $('#regBtn').click(function(){
 
+       //FIXME add validations for the input variables.
+
        var hashPassword = CryptoJS.SHA512($('#password').val());
        var hashTPass = CryptoJS.SHA512($('#transPassword').val());
 
@@ -43,8 +45,6 @@ $(document).ready(function(){
                }else{
                    $('#respReg').html(resp);
                }
-
-
            }
        });
 

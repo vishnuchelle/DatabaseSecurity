@@ -26,10 +26,10 @@ try{
         if ($secNumber == $retrievedNumber) {
             echo "true";
         } else {
-            echo "false1";
+            echo "false";
         }
     }else{
-        echo "false2";
+        echo "false";
     }
 
 }catch (PDOException $e) {

@@ -20,12 +20,12 @@ $sentPassword = $_GET['p'];
             {
                 echo "true";
             }else{
-                echo "false3";
+                echo "false";
             }
         }
         else
         {
-            echo "false4";
+            echo "false";
         }
     }
     catch(PDOException $e) {

@@ -38,6 +38,10 @@ try {
     $stmt->bindParam(':branchNumber', $userDetails['branchCode']);
     $stmt->execute();
 
+    $stmt1 = $conn->prepare("INSERT INTO auth_number (CUSTOMER_ID, AUTH_NUMBER) VALUES (:customerID, NULL)");
+    $stmt1->bindParam(':customerID', $customerID);
+    $stmt1->execute();
+
     echo "true";
 
 }catch (PDOException $e){
