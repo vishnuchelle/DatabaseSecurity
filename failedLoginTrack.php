@@ -25,5 +25,4 @@ if($c_id != null)
 }else{
     echo "Customer ID is null";
 }
-
 ?>

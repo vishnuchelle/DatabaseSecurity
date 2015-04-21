@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/CryptoJS/sha512.js"></script>
+    <title>Register Page</title>
+</head>
+<body>
+    <H1><b>WELCOME TO OUR BANK</B></H1>
+    <H1><b>REGISTER HERE</B></H1>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    FirstName:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="First Name" value="" id="fName">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Middle Name:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="Middle Name" value="" id="mName">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last Name:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="Last Name" value="" id="lName">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Username:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="Username" value="" id="userName">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="Password" value="" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Transaction Password:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="Transaction Password" value="" id="transPassword">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address-1:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="Address1" value="" id="address1">
+                </td>
+                <td>
+                    Address-2(Optional):
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="Address2" value="" id="address2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    City:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="City" value="" id="city">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Zip:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="Zip" value="" id="zip">
+                </td>
+                <td>
+                    State:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="State" value="" id="state">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="Email" value="" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone Number:
+                </td>
+                <td>
+                    <INPUT TYPE="TEXT" NAME="Phone Number" value="" id="phoneNumber">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Branch Code:
+                </td>
+                <td>
+                    <select id="branchCode">
+                        <option value="BR01">BranchOne</option>
+                        <option value="BR02">BranchTwo</option>
+                        <option value="BR03">BranchThree</option>
+                    </select>
+                </td>
+
+        </table>
+    </div>
+<div><Button id="regBtn">Register</Button></div>
+    <div id="respReg"></div>
+
+</body>
+</html>
