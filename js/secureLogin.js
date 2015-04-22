@@ -1,5 +1,5 @@
 /**
- * Created by Vishnu Chelle on 4/19/2015.
+ * Created by Vishnu Chelle on 3/26/2015.
  */
 
 $(document).ready(function(){
@@ -32,7 +32,7 @@ $(document).ready(function(){
 
     $('#secureBtn').click(function(){
 
-        if (($('#userPassword').val() == '') && ($('#securePassword').val() == '')) {
+        if (($('#userPassword').val() == '') || ($('#securePassword').val() == '')) {
             $('#loginResp').html("Please provide both the passwords");
         } else {
 
