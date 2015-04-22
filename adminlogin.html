@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/CryptoJS/sha512.js"></script>
+    <script src="js/adminLogin.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom-css.css" type="text/css">
+    <title>Admin Login Page</title>
+</head>
+<body>
+
+<div class="row text-center titleBackground">
+    <div class="titleTextColor"><h1>IDBMS BANK</h1></div>
+</div>
+<br/>
+<br/>
+<br/>
+
+<div class="row">
+    <div class="col-lg-6 col-lg-push-3">
+        <div id="login-overlay">
+            <div class="modal-content adminBackground">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title" id="myModalLabel"><span class="text-success">BANK ADMIN</span> Login Here!!!</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-6 col-xs-push-3">
+                            <div class="well">
+
+                                <div class="form-group">
+                                    <p>Login with your <span class="text-success">Employee ID!</span></p>
+                                    <input type="text" name="username" id="empID" tabindex="1" class="form-control" placeholder="Employee ID" value="">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" name="password" id="adminPassword" tabindex="1" class="form-control" placeholder="Password" value="">
+                                </div>
+
+                                <button id="submitBtn" class="btn btn-success btn-block">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div><span id="response" class="text-danger">Response will be displayed here</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

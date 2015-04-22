@@ -41,8 +41,8 @@ $(document).ready(function(){
                         $('#response').html("Provide a valid Username");
                     }
                 }
-                });
-            }
+            });
+        }
     });
 
     $('#regBtn').click(function(){

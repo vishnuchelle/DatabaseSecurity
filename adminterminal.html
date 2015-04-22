@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/CryptoJS/sha512.js"></script>
+    <script src="js/adminTerminal.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom-css.css" type="text/css">
+    <title>Bank Admin Terminal</title>
+</head>
+<body>
+
+<div class="row text-center titleBackground">
+    <div class="titleTextColor"><h1>IDBMS BANK</h1></div>
+</div>
+<br/>
+<br/>
+<br/>
+
+<div class="row">
+    <div class="col-lg-8 col-lg-push-2 ">
+        <div id="login-overlay">
+            <div class="modal-content adminBackground">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title" id="myModalLabel">BANK ADMIN<span class="text-success"> TERMINAL</span></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="well">
+
+                                <button id="createUser" class="btn btn-success btn-block">Create a New User Account</button>
+                                <br/>
+                                <button id="makeDeposit" class="btn btn-danger btn-block">Make a Deposit</button>
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="well">
+
+                                <button id="viewUser" class="btn btn-warning btn-block">View User Information</button>
+                                <br/>
+                                <button id="viewTrans" class="btn btn-info btn-block">View Account Transactions</button>
+
+                            </div>
+                        </div>
+                        <div><span id="response" class="text-danger">Response will be displayed here</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
