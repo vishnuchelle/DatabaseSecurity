@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/CryptoJS/sha512.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/custom-css.css" type="text/css">
+    <title>Customer Information</title>
+
+
+</head>
+<body>
+
+<div class="row text-center titleBackground">
+    <div class="titleTextColor"><h1>IDBMS BANK</h1></div>
+</div>
+<br/>
+<br/>
+<br/>
+
+
+<div class="row">
+    <div class="col-lg-8 col-lg-push-2 ">
+        <div id="login-overlay">
+            <div class="modal-content adminBackground">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title" id="myModalLabel">CUSTOMER<span class="text-success"> INFORMATION</span></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-push-2">
+                            <div class="row well">
+                                <div class="col-xs-4 col-xs-push-2">
+                                    <input type="text" name="username" tabindex="1" class="form-control" placeholder="Customer Username" id="userName" value="">
+                                </div>
+                                <div class="col-xs-4 col-xs-push-2">
+                                    <button id="showBtn" class="btn btn-success btn-block">Show Customer Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <span id="response" class="text-danger">Error Response will be displayed here</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-push-2">
+                            <div class="well text-center">
+                                <div id="infoContainer"></div>
+
+                                <table align="center" cellspacing="20">
+                                        <tr>
+                                            <td>
+                                                <strong>Customer ID:</strong>
+                                            </td>
+                                            <td style="padding-left: 30px">
+                                                <span class="text-info">Customer ID</span>
+                                            </td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

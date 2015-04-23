@@ -29,7 +29,8 @@ $(document).ready(function(){
 
         if(access == "1"){
             //Navigate to Create User Account page
-            $('#response').html("Navigate to Create User Account page");
+            //$('#response').html("Navigate to Create User Account page");
+            window.location="createuseraccount.html";
         }else{
             $('#response').html("Access Denied!!!");
         }
@@ -55,7 +56,8 @@ $(document).ready(function(){
 
         if(access == "1" || access== "2" || access== "3"){
             //Navigate to View user info
-            $('#response').html("Navigate to View user info");
+            //$('#response').html("Navigate to View user info");
+            window.location="userinformation.html";
         }else{
             $('#response').html("Access Denied!!!");
         }
