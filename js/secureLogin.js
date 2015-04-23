@@ -36,43 +36,57 @@ $(document).ready(function(){
             $('#loginResp').html("Please provide both the passwords");
         } else {
 
-                var hashPassword = CryptoJS.SHA512($('#userPassword').val());
-                // Ajax Call
-                $.ajax({
-                    type: "GET",
-                    url: "validateSecureNum.php",
-                    data: "sN=" + $('#securePassword').val(),
-                    success: function(resp1){
-                        if($.trim(resp1) == "true"){
+            // Ajax Call
+            $.ajax({
+                type: "GET",
+                url: "bruteCheck.php",
+                success: function(lockStatus){
+                    if($.trim(lockStatus)=== "false"){
+                        //Account is locked. Please try after one hour.
+                        $('#loginResp').html("Account is locked. Please try after one hour!");
+                    }else{
 
-                            $.ajax({
-                                type: "GET",
-                                url: "validatePass.php",
-                                data: "p=" + hashPassword+"",
-                                success: function(resp2){
-                                    if($.trim(resp2) == "true"){
-                                        $('#loginResp').html("Successfully Logged In");
-                                    }else{
-                                        $('#loginResp').html("Failed Login");
+                        var hashPassword = CryptoJS.SHA512($('#userPassword').val());
+                        // Ajax Call
+                        $.ajax({
+                            type: "GET",
+                            url: "validateSecureNum.php",
+                            data: "sN=" + $('#securePassword').val(),
+                            success: function(resp1){
+                                if($.trim(resp1) == "true"){
 
-                                        //call the failed login tracker function to save the failed attempt
-                                        $.ajax({
-                                            type: "GET",
-                                            url: "failedLoginTrack.php"
-                                        });//end ajax call
+                                    $.ajax({
+                                        type: "GET",
+                                        url: "validatePass.php",
+                                        data: "p=" + hashPassword+"",
+                                        success: function(resp2){
+                                            if($.trim(resp2) == "true"){
 
-                                    }
+                                                $('#loginResp').html("Successfully Logged In");
+                                            }else{
+                                                $('#loginResp').html("Failed Login");
+
+                                                //call the failed login tracker function to save the failed attempt
+                                                $.ajax({
+                                                    type: "GET",
+                                                    url: "failedLoginTrack.php"
+                                                });//end ajax call
+
+                                            }
+                                        }
+                                    });//end AJAX call
+
                                 }
-                            });//end AJAX call
+                                else{
 
-                        }
-                        else{
+                                    $('#loginResp').html("Provide latest secure number!");
+                                }
+                            }
+                        });//end AJAX call
 
-                            $('#loginResp').html("Provide latest secure number!");
-                        }
-                    }
-                });//end AJAX call
-
+                    }//end of else
+                }//end of if
+            });//end AJAX call
         }
 
     });
