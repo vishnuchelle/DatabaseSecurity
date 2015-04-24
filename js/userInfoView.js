@@ -9,7 +9,7 @@ $(document).ready(function(){
         //AJAX CALl
         $.ajax({
             type: "GET",
-            url: "viewCustomerInfo.php",
+            url: "php/viewCustomerInfo.php",
             data: "userName=" + $('#userName').val(),
             success: function(resp){
 
@@ -19,7 +19,8 @@ $(document).ready(function(){
 
                 //var keys = ["CustomerID", "FirstName", "LastName", "MiddleName", "Address", "PhoneNumber", "BranchCode", "Zip", "State", "City"];
 
-                var divHtml = '';
+                var divHtml = "";
+
 
                 divHtml += "<div class='row'><div class='col-xs-4 col-xs-push-2'>";
                 divHtml += "<span class='text-warning'>" + "Customer ID" + "</span>";
@@ -50,6 +51,12 @@ $(document).ready(function(){
                 divHtml += "<span class='text-warning'>" + "Last Name" + "</span>";
                 divHtml += "</div><div class='col-xs-4 col-xs-push-2'>";
                 divHtml += "<span class='text-info'>" + obj.LastName + "</span>";
+                divHtml += "</div></div>";
+
+                divHtml += "<div class='row'><div class='col-xs-4 col-xs-push-2'>";
+                divHtml += "<span class='text-warning'>" + "Email" + "</span>";
+                divHtml += "</div><div class='col-xs-4 col-xs-push-2'>";
+                divHtml += "<span class='text-info'>" + obj.Email + "</span>";
                 divHtml += "</div></div>";
 
                 divHtml += "<div class='row'><div class='col-xs-4 col-xs-push-2'>";
@@ -84,15 +91,10 @@ $(document).ready(function(){
                 divHtml += "</div></div>";
 
                 //divHtml += "<p>" + resp + ""  +"</p>";
-
-                $("#infoContainer").append(divHtml);
+                $("#infoContainer").html(divHtml);
 
             }
         });
-
-
-
-
 
     });
 

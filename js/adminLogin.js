@@ -15,7 +15,7 @@ $(document).ready(function(){
             // Ajax Call
             $.ajax({
                 type: "GET",
-                url: "validateEmployee.php",
+                url: "php/validateEmployee.php",
                 data: "e=" + hashEmpID + "&p=" + hashPassword+"",
                 success: function(resp){
                     if($.trim(resp) === "true"){

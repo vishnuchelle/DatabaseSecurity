@@ -9,7 +9,7 @@ $(document).ready(function(){
     function secNumGenerate(){
         $.ajax({
             type: "GET",
-            url: "random.php",
+            url: "php/random.php",
             success: function(resp){
                 $('#respSecPass').html(resp+"");
             }
@@ -39,7 +39,7 @@ $(document).ready(function(){
             // Ajax Call
             $.ajax({
                 type: "GET",
-                url: "bruteCheck.php",
+                url: "php/bruteCheck.php",
                 success: function(lockStatus){
                     if($.trim(lockStatus)=== "false"){
                         //Account is locked. Please try after one hour.
@@ -50,14 +50,14 @@ $(document).ready(function(){
                         // Ajax Call
                         $.ajax({
                             type: "GET",
-                            url: "validateSecureNum.php",
+                            url: "php/validateSecureNum.php",
                             data: "sN=" + $('#securePassword').val(),
                             success: function(resp1){
                                 if($.trim(resp1) == "true"){
 
                                     $.ajax({
                                         type: "GET",
-                                        url: "validatePass.php",
+                                        url: "php/validatePass.php",
                                         data: "p=" + hashPassword+"",
                                         success: function(resp2){
                                             if($.trim(resp2) == "true"){

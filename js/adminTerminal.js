@@ -9,7 +9,7 @@ $(document).ready(function(){
         $.ajax({
             type: "GET",
             async: false,
-            url: "adminAccess.php",
+            url: "php/adminAccess.php",
             success: function(resp){
                 //get the response integer
                 //$('#response').html(resp+"");

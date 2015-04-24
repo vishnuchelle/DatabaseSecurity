@@ -13,7 +13,7 @@ $(document).ready(function(){
             // Ajax Call
             $.ajax({
                 type: "GET",
-                url: "validateUser.php",
+                url: "php/validateUser.php",
                 data: "userName=" + $('#userName').val(),
                 success: function(resp){
                     if($.trim(resp) === "true"){
@@ -21,7 +21,7 @@ $(document).ready(function(){
                         // Ajax Call
                         $.ajax({
                             type: "GET",
-                            url: "bruteCheck.php",
+                            url: "php/bruteCheck.php",
                             success: function(lockStatus){
                                 if($.trim(lockStatus)=== "false"){
                                     //Account is locked. Please try after one hour.

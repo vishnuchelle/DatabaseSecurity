@@ -24,14 +24,14 @@ try {
     if($row = $stmt->fetch()) 
     {
          echo "logged in succesfully";
-         echo "<a href='home.html'>";
+         echo "<a href='../scratch/home.html'>";
          echo "click here to go to home page";
          echo "</a>";
     }
    else
     {
         echo "invalid username try again";
-        echo "<a href='login.html'>";
+        echo "<a href='../login.html'>";
         echo "click here to go to login page";
         echo "</a>";
      } 

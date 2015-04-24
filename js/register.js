@@ -42,7 +42,7 @@ $(document).ready(function(){
            // Ajax Call
            $.ajax({
                type: "GET",
-               url: "registerUser.php",
+               url: "php/registerUser.php",
                data: "user=" + userRecord+"",
                success: function(resp){
                    //var obj = JSON.stringify(resp);

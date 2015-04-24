@@ -27,7 +27,7 @@ $(document).ready(function(){
             // Ajax Call
             $.ajax({
                 type: "GET",
-                url: "createAccount.php",
+                url: "php/createAccount.php",
                 data: "u=" + userName + "&b=" + branchCode + "&at=" + accType + "&bal=" + accBalance + "",
                 success: function (resp) {
                     if ($.trim(resp) === "true") {
