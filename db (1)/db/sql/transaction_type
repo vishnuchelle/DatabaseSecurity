@@ -1,5 +1,0 @@
-CREATE TABLE `transaction_type` (
-  `TRANSTYPE_ID` char(4) NOT NULL,
-  `TRANSTYPE_DESC` varchar(40) NOT NULL,
-  PRIMARY KEY (`TRANSTYPE_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
